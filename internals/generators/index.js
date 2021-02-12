@@ -24,7 +24,7 @@ module.exports = plop => {
   plop.addHelper('directory', comp => {
     try {
       fs.accessSync(
-        path.join(__dirname, `../../app/containers/${comp}`),
+        path.join(__dirname, `../../resources/js/containers/${comp}`),
         fs.F_OK,
       );
       return `containers/${comp}`;
